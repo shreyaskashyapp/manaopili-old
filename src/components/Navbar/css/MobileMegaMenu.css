@@ -1,0 +1,32 @@
+@keyframes slideInFromRight {
+  from {
+    transform: translateX(100%);
+  }
+  to {
+    transform: translateX(0);
+  }
+}
+
+@keyframes slideOutToRight {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(100%);
+  }
+}
+
+.sublink-overlay {
+  animation: slideInFromRight 0.3s ease-out forwards;
+}
+
+.sublink-overlay.exiting {
+  animation: slideOutToRight 0.3s ease-in forwards;
+}
+.sublink-overlay .app-logo {
+  width: auto;
+  max-width: 70%; /* Controls the maximum size */
+  height: auto; /* Ensures the height scales correctly */
+  object-fit: contain; /* Keeps logo proportions */
+  
+}

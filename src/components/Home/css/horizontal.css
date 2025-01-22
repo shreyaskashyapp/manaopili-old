@@ -1,0 +1,34 @@
+.box:hover{
+    background-image: url('../../../assets/images/horizontalSection.png'); /* Normal image */
+  background-size: cover;
+  background-position: center;
+  position: relative;
+  transition: background-image 0.3s ease; /* Smooth transition */
+}
+.scrollbar {
+    height: 2px; /* Height of the scrollbar */
+    background-color: transparent; /* Hide by default */
+    transition: background-color 0.3s; /* Transition for hover effect */
+  }
+  
+  .scrollbar-visible {
+    background-color: gray; /* Change to visible color when hovered */
+  }
+  
+  .scrollbar-inner {
+    height: 100%; /* Fill the scrollbar height */
+    background-color: yellow; /* Your active scrollbar color */
+    transition: width 0.5s; /* Smooth width transition */
+  }
+  
+  .scroll-container {
+    position: relative; /* Allow absolute positioning of scrollbar */
+  }
+  
+  .scroll-container:hover .scrollbar {
+    background-color: gray; /* Change color on hover */
+  }
+  .swiper-slide{
+    height: initial;
+  }
+  
